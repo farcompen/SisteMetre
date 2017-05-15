@@ -35,6 +35,7 @@ namespace WMI2
             label40.Visible = true;
             label44.Visible = true;
             label39.Visible = true;
+            label52.Text = listBox6.Items.Count.ToString();
 
         }
 
@@ -152,6 +153,15 @@ namespace WMI2
                 {
                     listBox3.Items.Add(obj["PercentProcessorTime"].ToString());
                     listBox4.Items.Add(obj["Name"].ToString());
+                }
+
+                ObjectQuery sorgu7 = new ObjectQuery("SELECT HotFixID FROM Win32_QuickFixEngineering");
+                ManagementObjectSearcher man_ob_arayici7 = new ManagementObjectSearcher(scope, sorgu7);
+                foreach (ManagementObject obj in man_ob_arayici7.Get())
+                {
+                    listBox6.Items.Add(obj["HotFixID"].ToString());
+
+
                 }
              /*   ObjectQuery sorgu7 = new ObjectQuery("SELECT * FROM Win32_Volume Where DriveLetter='C'");
                 ManagementObjectSearcher man_ob_arayici7 = new ManagementObjectSearcher(scope, sorgu7);
