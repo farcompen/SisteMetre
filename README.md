@@ -1,5 +1,6 @@
 # SisteMetre 
 Sistemetre; Windows WMI uygulamasıdır Networkunuzde bulunan client/server cihazlarda çaşılan proccess ve servisleri listeler , ayrıca basit donanım yazılım bilgilerini çıkartır(uzaktan). Grafiksel olarak çıktı üretir .
+# Yeni güncelleme > Bilgisayarlardaki update history kontrol edilerek , hot fixID 'ler çekildi
 
 
 #English 
